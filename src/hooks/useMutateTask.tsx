@@ -11,6 +11,7 @@ export const useMutateTask = () => {
       if (previousTodo) {
         utils.todo.getTasks.setData(undefined, [res, ...previousTodo]);
       }
+      reset();
     },
   });
 
